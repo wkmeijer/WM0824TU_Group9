@@ -83,7 +83,7 @@ for c,n in zip(ips_per_country['country'],ips_per_country['ips']):
         perCountryLabels.append(c)
 
 plt.bar(range(0,len(perCountryY)), perCountryY)
-plt.xticks(range(1,len(perCountryY)+1), list(ips_per_country['country']), rotation=90, fontsize=6)
+plt.xticks(range(1,len(perCountryY)+1), perCountryLabels, rotation=90, fontsize=6)
 plt.xlabel("countries (>100 infections per 1,000,000)")
 plt.ylabel("number of infections per 1,000,000 ips")
 plt.savefig('images/metric_per_country.png')
