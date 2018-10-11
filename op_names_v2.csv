@@ -1,0 +1,318 @@
+op,name,size
+AR01,Cablevision (FiberTel),3884800
+AR02,Multicanal (Flash),0
+AR03,Telecom Argentina,3910656
+AR04,Telefonica de Argentina,4122368
+AR05,Telmex Argentina (Claro),1740800
+AU02,iiNet (inc. Internode and Adam Internet),2982912
+AU05,M2 Telecommunications (inc. iPrimus and Dodo),1629440
+AU06,SingTel Optus,6413056
+AU07,Telstra,13659260
+AU08,TPG Telecom,2003968
+AT02,A1 Telekom Austria,2908416
+AT01,Tele2 Austria,5453312
+AT03,UPC Austria (UPC Telekabel),11363072
+BE01,Proximus (Belgacom),3927808
+BE03,BASE Company (formerly KPN Belgium),5184256
+BE02,Mobistar,890368
+BE04,Telenet (incl UPC Belgium),13465856
+BR02,Algar Telecom (formerly CTBC),1052672
+BR03,Global Village Telecom (GVT),4562944
+BR05,Claro Brasil (incl. Embratel & NET Servicos),14931712
+BR01,"Oi SA (incl. Telemar Norte Leste, Brasil Telecom)",12171264
+BR06,Telefonica Brasil (Vivo),6401792
+BG01,Blizoo (formerly CableTel-Eurocom) (Bulgaria),408576
+BG02,Max (Bulgaria),9984
+BG03,MobilTel (M-Tel),597777
+BG04,Nexcom Bulgaria,0
+BG05,"Vivacom (Bulgarian Telecommunications Company, BTC)",677377
+CA01,Bell Aliant,1293312
+CA02,Bell Canada,6521634
+CA03,Cogeco Cable,1039872
+CA04,Manitoba Telecom Services (MTS Allstream),1200128
+CA05,Rogers Communications,4541184
+CA06,SaskTel,594184
+CA07,Shaw Communications,5498112
+CA08,Telus Communications,5020672
+CA09,Videotron,2640128
+CL06,Claro Chile,1003264
+CL01,Entel Chile,0
+CL02,Grupo GTD (inc Telsur),1002496
+CL03,Telefonica Chile (Movistar),2877184
+CL05,VTR,1378816
+CN02,China Telecom Corporation,127635200
+CN03,"China Tietong (CTT, China Railcom [CRC])",20376320
+CN04,China Unicom,71734272
+CN05,Dr Peng Telecom (Inc. Great Wall Broadband Network (GWBN),1128448
+CO01,Empresa de Telecomunicaciones de Bogota (ETB),887552
+CO02,Movistar Colombia,2242816
+CO03,"Claro Colombia (previously Comcel, Telmex Colombia)",3003648
+CO04,Une-EPM,3055616
+CZ03,Dial Telecom (includes Volny),263424
+CZ01,GTS Czech,1374213
+CZ05,T-Mobile Czech Republic,319488
+CZ02,O2 Czech Republic,1729024
+CZ04,UPC Ceska Republika,11363072
+DK04,Stofa,262144
+DK01,TDC,8261632
+DK02,"Telenor Denmark (incl. Tele2, Sonofon & Cybercity)",7364608
+DK03,Telia Denmark (incl. Call Me & DLG Tele),271104
+EG01,LINKdotNET (Egypt),1621248
+EG02,TE Data,7079168
+EE01,Eesti Telekom (incl. EMT and Elion),594944
+EE02,Starman,123904
+EE03,STV Cable,0
+FI01,DNA Finland,8740864
+FI02,Elisa Corporation,3730816
+FI03,Finnet,356864
+FI05,TeliaSonera Finland,3444736
+FR01,Bouygues Telecom,7095552
+FR02,Orange France,20108544
+FR03,Iliad (Free),11116544
+FR05,Numericable-Completel,2395840
+FR06,SFR,13777408
+DE07,NetCologne,563712
+DE08,PrimaCom (Germany),123904
+DE09,Tele2 (Germany),5048064
+DE10,Telefonica Germany (O2),7834112
+DE02,Telekom Deutschland,34184960
+DE11,United Internet (1&1),1246720
+DE12,Unitymedia KabelBW,832512
+DE13,Versatel Communications,1371392
+DE01,Vodafone Germany,10555904
+GR05,Cyta Hellas,793856
+GR01,ForthNet,612352
+GR04,Hellas Online,757760
+GR02,OTE (Hellenic Telecommunications Organisation),1817600
+GR03,Wind Hellas (incl. Tellas),337920
+HU06,DIGI Telecommunications (incl TvNetWork),290816
+HU02,GTS Hungary,1368837
+HU03,Invitel Holdings (formerly HTCC),692992
+HU04,Magyar Telekom (MTel),1389824
+HU05,UPC Hungary,11363072
+IS01,Siminn (Iceland Telecom),143616
+IS02,Vodafone Iceland (Fjarskipti),303616
+IN01,Bharat Sanchar Nigam Ltd (BSNL),6126848
+IN02,Bharti Airtel,4073815
+IN03,Mahanagar Telephone Nigam Ltd (MTNL),1524224
+IN07,Quadrant Televentures (formerly HFCL Infotel),167424
+IN04,Reliance Communications (RCOM),505344
+IN08,"Sistema Shyam TeleServices (SSTL, MTS India)",0
+IN06,Tata Communications,2609424
+IN09,"Tata Teleservices (TTSL, inc. TTML and Tata DOCOMO)",711168
+ID01,First Media,774656
+ID03,Indosat,925696
+ID02,Telkom Indonesia,3972352
+IE02,Digiweb,165632
+IE03,Eircom,1111552
+IE04,Imagine Communications,420608
+IE05,Magnet Networks,125952
+IE08,UPC Ireland,20836608
+IE09,Vodafone Ireland,439296
+IL03,012 Smile Telecom,1469500
+IL01,Bezeq (Israel Telecommunication Corporation),1546240
+IL02,HOT Telecommunication Systems,0
+IL04,NetVision (inc. Barak),1663488
+IT01,FastWeb,3641088
+IT02,Telecom Italia,20747790
+IT03,Tiscali (Italy),2738433
+IT05,Vodafone Italy,5215744
+IT04,Wind Telecomunicazioni (Wind Italy),6102528
+JP02,Ymobile Corp (previously eAccess),0
+JP03,Internet Initiative Japan (IIJ),3790080
+JP04,J:COM (Jupiter Telecom),5908480
+JP05,KDDI (au),19042048
+JP06,NTT (NTT East & NTT West),30837248
+JP07,Softbank BB (incl. Yahoo Japan),47328512
+JP09,UQ Communications,3674112
+LU01,Post Luxembourg (formerly P&T Luxembourg),212736
+MY01,Maxis,0
+MY02,Packet One Networks (P1) (Malaysia),270336
+MY03,Telekom Malaysia,3003904
+MY04,YTL Communications (Y-Max Networks/YES),0
+MX01,Axtel,1819648
+MX02,Cablemas (Mexico),679168
+MX03,Izzi Telecom (formerly Cablevision),585216
+MX06,Maxcom,0
+MX04,Megacable (Mexico),2360320
+MX05,Telmex (Telefonos de Mexico),13539360
+NL02,CAIW (Caiway),229376
+NL03,KPN Telecom (or Royal KPN),1801728
+NL07,Euronet (trading as Online NL),434176
+NL04,Tele2 NL,6849792
+NL05,UPC Netherlands,11363072
+NL08,Vodafone Netherlands,0
+NL06,Zesko Holding (Ziggo),0
+NZ05,CallPlus (inc. Slingshot),408064
+NZ06,Orcon,0
+NZ01,Spark (formerly Telecom New Zealand),1291008
+NZ03,Vodafone New Zealand (incl TelstraClear),335872
+NO01,Get,11942144
+NO02,NextGenTel,483840
+NO04,Telenor Norge,6844176
+NO07,Telio Norway,0
+NO06,Broadnet (HomeNet),1556224
+PE01,"Movistar Peru (formerly Telefonica del Peru, TDP)",1545984
+PH01,Bayan Telecommunications,365824
+PH04,Eastern Communications (formerly ETPI),247296
+PH05,Globe Telecom (Philippines),558336
+PH06,Wi-Tribe Telecoms (Liberty Telecoms Holdings),0
+PH07,PLDT (incl. Smart Communications and Sun Cellular),2747904
+PL01,Multimedia Polska,607488
+PL02,Netia,1910528
+PL09,"Orange Polska (incl Telekomunikacja Polska, Centertel)",5515264
+PL06,UPC Poland,11363072
+PL08,Vectra,527872
+PT01,Cabovisao,212992
+PT02,MEO (formerly Portugal Telecom Comunicacoes [PTC]),1929728
+PT05,Vodafone Portugal,1208064
+PT04,Nos (formerly Zon Optimus/Zon Multimedia),2035712
+RO02,iNes Telecom,62208
+RO03,NextGen Communications (Romania),291840
+RO04,Romania Cable Systems (RCS&RDS),2156288
+RO05,Telekom Romania Communications (formerly RomTelecom),1522432
+RO06,UPC Romania,11363072
+RU02,AKADO Telecom,217344
+RU20,Enforta (Prestige Internet),397312
+RU11,ER-Telecom,1054720
+RU21,Mobile TeleSystems (MTS),1601281
+VN06,CMC Telecom (CMC TI),0
+RU22,Rostelecom,12484864
+TW05,Far EasTone (FET) (including NCIC),0
+HR05,VIPnet,163840
+RU05,Vimpelcom (Beeline Russia),3298144
+SA02,Etihad Atheeb (GO Telecom),196608
+SA03,Integrated Telecom Company (ITC),154624
+SA04,Saudi Telecom Company (STC),2951680
+SK01,Orange Slovensko,0
+SK02,Slovak Telekom,661248
+SK03,UPC Slovakia,11363072
+SI01,Amis (formerly Medinet),115712
+SI02,T-2,193536
+SI03,Telekom Slovenije (incl. Mobitel),794368
+SI05,Telemach (Slovenia),301568
+SI04,Tus Telekom (formerly Voljatel),0
+ZA03,Afrihost (incl. Axxess DSL),0
+ZA01,iBurst (inc. Wireless Business Solutions),128000
+ZA04,MWEB (South Africa),1498368
+ZA02,Telkom South Africa (incl. Telkom Mobile [formerly 8ta]),1294080
+ZA05,Vox Telecom,240128
+ZA06,Web Africa,139520
+KR02,KT Corp,45588768
+KR07,LG Uplus (formerly LG Telecom),20077568
+KR06,SK Broadband (formerly Hanaro Telecom),14659360
+ES01,Euskaltel,490496
+ES02,Grupo Corporativo ONO,3098880
+ES03,Jazz Telecom (Jazztel),4608
+ES04,Orange Espana,6699264
+ES05,Telefonica Espana (Movistar),10597376
+ES06,Vodafone Spain,4000528
+SE01,Com Hem (including UPC Sweden),12220160
+SE02,Tele2 Sweden,0
+SE03,Telenor Sweden (incl. Glocalnet and Bredbandsbolaget),7037712
+SE04,TeliaSonera Sweden,7651072
+CH01,Cablecom (UPC Switzerland),11363072
+CH02,Sunrise (formerly TDC Switzerland),878336
+CH03,Swisscom,3533824
+TW01,Chunghwa Telecom,12276992
+TW02,kbro (Eastern Multimedia Co),0
+TW03,Taiwan Broadband Communications (TBC),0
+TH01,TOT,1286144
+TH02,True Corp,3021824
+TH03,Triple T Broadband,958208
+TR01,Turk Telekom,7067648
+TR03,Turkcell Superonline (formerly Tellcom),1379840
+TR02,Turksat (Uydunet),415488
+UA02,Datagroup,130048
+UA04,Kyivstar,0
+UA05,Ukrtelecom (incl. TriMob),1818368
+UA06,Vega (formerly Farlep/Optima),311296
+UA07,Volia,792576
+GB01,BSkyB (incl. Easynet and UK Online),9178112
+GB02,BT Group,11212544
+GB07,EE (incl. Orange UK and T-Mobile UK),0
+GB05,KCOM Group,1112322
+GB04,TalkTalk (incl. Tiscali UK),9687808
+GB09,Virgin Media,9473536
+US19,AT&T,114347520
+US01,Bright House Networks,1075894528
+US02,Cablevision Systems (US),5978368
+US20,CenturyLink,22670172
+US04,Charter Communications,11255296
+US05,Cincinnati Bell,703744
+US06,Clearwire,578304
+US07,Comcast,71972352
+US09,Cox Communications,12167168
+US12,Frontier Communications,13349376
+US14,Mediacom,1382144
+US15,Time Warner Cable (TWC),35155968
+US16,Verizon Communications,0
+US17,Windstream Communications,9203488
+VN01,FPT Telecom,1425408
+VN02,"Saigon Post and Telecommunications (SPT, Saigon Postel)",124928
+VN03,"Vietnam Posts and Telecommunications (VNPT, inc. VDC)",6902272
+VN04,Viettel Telecom,905216
+HR03,Optima Telekom,93184
+HR04,T-Hrvatski Telekom (incl. T-Mobile),1261568
+LV01,Baltcom (formerly Baltkom),281600
+LV02,IZZI,0
+LV03,Lattelecom Group,499712
+LV05,Unistars (Wireless Broadband),0
+LT01,"Cgates (inc. VDNET, MVTV)",179712
+LT02,Lithuanian Radio and Television Centre (MEZON),250880
+LT04,TEO LT,772608
+MA01,Maroc Telecom,8350208
+MA02,Inwi (Wana),0
+PK01,Pakistan Telecommunication Company Limited (PTCL),3882240
+PK02,Wateen Telecom,295168
+PK03,Wi-Tribe (Pakistan),167680
+PK04,Worldcall Telecom,123904
+RS01,Orion Telekom,144384
+RS02,Telekom Srbija,720896
+RS03,VeratNet,102144
+MT03,Vodafone Malta,0
+PE04,Olo Peru,0
+TH04,CAT Telecom,480768
+ZA07,Neotel (South Africa),0
+KZ01,KaR-Tel (Beeline),0
+ID05,Internux (Bolt!),0
+MT01,GO (formerly Maltacom),201984
+BY01,Alternative Digital Network (incl. Atlant Telecom),60160
+BY02,Beltelecom,1069312
+BY03,Cosmos TV,0
+CY01,Cyprus Telecommunications Authority (Cyta),793856
+CY02,PrimeTel (Cyprus),71936
+KZ02,Kazakhtelecom (KT),1528320
+BG06,Bulsatcom,251648
+CY03,Cablenet (Cyprus),95744
+TR04,D-Smart Net (Dogan TV Holding),410112
+TR05,Millenicom Turkey (inc. Doping),109824
+TR06,"Vodafone Net (incl. Borusan, Koc.net)",727040
+UA08,Triolan,0
+US23,Suddenlink Communications,0
+ID04,Bakrie Telecom,768
+RU23,TransTeleCom (TTK),773888
+CY04,MTN Cyprus (formerly Areeba),0
+CZ06,Vodafone Czech Republic,0
+EG03,Vodafone Egypt,3352064
+LU02,Orange Luxembourg,0
+PE02,Claro Peru,648192
+RO07,Orange Romania,0
+GB10,Vodafone UK,0
+CA10,Eastlink,322560
+RS04,Serbia Broadband (SBB),516352
+LT05,Balticum (Lithuania),65280
+NO08,Altibox (inc. Lyse Tele),1030144
+VN05,Saigon Tourist Cable Television (SCTV),196608
+IS03,Hringdu,15360
+PE03,Americatel Peru,135936
+MT02,Melita,290048
+BR12,TIM Participacoes (TIM Brasil),540672
+RO08,Vodafone Romania,0
+IS04,Tal,0
+IE10,Sky Ireland,0
+CH05,Quickline Media (inc. Finecom),0
+CA11,Xplornet Communications,315648
+PK05,LINKdotNET Pakistan,0
+PK06,Qubee (Augere),51457
+BR13,Copel Telecom,0
