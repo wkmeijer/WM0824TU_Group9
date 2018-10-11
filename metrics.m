@@ -1,9 +1,9 @@
 filename = 'data_miraibadpackets.csv';
 data = readtable(filename);
-asn = data( : , 4 );
+isps = data( : , 2 );
 
 asn = categorical(table2array(asn));
-asn = table(categories(asn),countcats(asn));
+asn = table(categories(asn),countcats(asn))
 
 asn = sortrows(asn,2,'descend');
 asn = asn(1:10, :);
