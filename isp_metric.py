@@ -6,6 +6,7 @@ from datetime import datetime
 import sys
 
 # import data, parse to datetime, and reverse so we don't go back in time 
+op_names = pd.read_csv('op_names_v2.csv', na_filter = False)
 data = pd.read_csv('data_maraibadpackets_isp.csv', sep=';', na_filter = False)
 data['Date_First_Seen'] = [datetime.strptime(date, '%Y-%m-%d %H:%M:%S') for date in data['Date_First_Seen']]
 data = data.reindex(index=data.index[::-1])
@@ -33,12 +34,13 @@ ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%y'))
 
 for i in indices:
     ispData = data2[data2.isp == ispCount['isp'][i]].reset_index(drop=True)
-    plt.plot(ispData['Date_First_Seen'], range(0,len(ispData)), label=ispData['isp'][0])
+    size = float(list(op_names[op_names.op == ispData['isp'][0]]['size'])[0])
+    plt.plot(ispData['Date_First_Seen'], [x/size for x in range(0,len(ispData))], label=ispData['isp'][0])
 
 plt.xlabel("time (mm/yy)")
-plt.ylabel("total amount of new infections observed")
+plt.ylabel("normalized total amount of new infections observed")
 plt.legend(bbox_to_anchor=(0.25, 1))
-plt.savefig("images/block3/selection_of_isps.png")
+plt.savefig("images/block4/selection_of_isps.png")
 plt.clf()
 
 
@@ -51,13 +53,14 @@ ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%y'))
 
 for ispOp in tele2:
     ispData = data2[data2.isp == ispOp].reset_index(drop=True)
-    if len(ispData) > 0:
-        plt.plot(ispData['Date_First_Seen'], range(0,len(ispData)), label=ispOp)
+    size = float(list(op_names[op_names.op == ispOp]['size'])[0])
+    if size > 0 and len(ispData) > 0:
+        plt.plot(ispData['Date_First_Seen'], [x/size for x in range(0,len(ispData))], label=ispOp)
 
 plt.xlabel("time (mm/yy)")
-plt.ylabel("total amount of new infections observed")
+plt.ylabel("normalized total amount of new infections observed")
 plt.legend(bbox_to_anchor=(0.25, 1))
-plt.savefig("images/block3/tele2_global.png")
+plt.savefig("images/block4/tele2_global.png")
 plt.clf()
 
 
@@ -70,13 +73,14 @@ ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%y'))
 
 for ispOp in vodafone:
     ispData = data2[data2.isp == ispOp].reset_index(drop=True)
-    if len(ispData) > 0:
-        plt.plot(ispData['Date_First_Seen'], range(0,len(ispData)), label=ispOp)
+    size = float(list(op_names[op_names.op == ispOp]['size'])[0])
+    if size > 0 and len(ispData) > 0:
+        plt.plot(ispData['Date_First_Seen'], [x/size for x in range(0,len(ispData))], label=ispOp)
 
 plt.xlabel("time (mm/yy)")
-plt.ylabel("total amount of new infections observed")
+plt.ylabel("normalized total amount of new infections observed")
 plt.legend(bbox_to_anchor=(0.25, 1))
-plt.savefig("images/block3/vodafone_global.png")
+plt.savefig("images/block4/vodafone_global.png")
 plt.clf()
 
 
@@ -89,13 +93,14 @@ ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%y'))
 
 for ispOp in orange:
     ispData = data2[data2.isp == ispOp].reset_index(drop=True)
-    if len(ispData) > 0:
-        plt.plot(ispData['Date_First_Seen'], range(0,len(ispData)), label=ispOp)
+    size = float(list(op_names[op_names.op == ispOp]['size'])[0])
+    if size > 0 and len(ispData) > 0:
+        plt.plot(ispData['Date_First_Seen'], [x/size for x in range(0,len(ispData))], label=ispOp)
 
 plt.xlabel("time (mm/yy)")
-plt.ylabel("total amount of new infections observed")
+plt.ylabel("normalized total amount of new infections observed")
 plt.legend(bbox_to_anchor=(0.25, 1))
-plt.savefig("images/block3/orange_global.png")
+plt.savefig("images/block4/orange_global.png")
 plt.clf()
 
 # plot data of continents
@@ -107,13 +112,14 @@ ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%y'))
 
 for ispOp in europe:
     ispData = data2[data2.isp == ispOp].reset_index(drop=True)
-    if len(ispData) > 100:
-        plt.plot(ispData['Date_First_Seen'], range(0,len(ispData)), label=ispOp)
+    size = float(list(op_names[op_names.op == ispOp]['size'])[0])
+    if size > 0 and len(ispData) > 0:
+        plt.plot(ispData['Date_First_Seen'], [x/size for x in range(0,len(ispData))], label=ispOp)
 
 plt.xlabel("time (mm/yy)")
-plt.ylabel("total amount of new infections observed")
+plt.ylabel("normalized total amount of new infections observed")
 plt.legend(bbox_to_anchor=(0.25, 1))
-plt.savefig("images/block3/europe.png")
+plt.savefig("images/block4/europe.png")
 plt.clf()
 
 nAmerica = ['CA01','CA02','CA03','CA04','CA05','CA06','CA07','CA08','CA09','CA10','CA11','MX01','MX02','MX03','MX04','MX05','MX06','US01','US02','US04','US05','US06','US07','US09','US12','US14','US15','US16','US17','US19','US20','US23']
@@ -124,13 +130,14 @@ ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%y'))
 
 for ispOp in nAmerica:
     ispData = data2[data2.isp == ispOp].reset_index(drop=True)
-    if len(ispData) > 100:
-        plt.plot(ispData['Date_First_Seen'], range(0,len(ispData)), label=ispOp)
+    size = float(list(op_names[op_names.op == ispOp]['size'])[0])
+    if size > 0 and len(ispData) > 0:
+        plt.plot(ispData['Date_First_Seen'], [x/size for x in range(0,len(ispData))], label=ispOp)
 
 plt.xlabel("time (mm/yy)")
-plt.ylabel("total amount of new infections observed")
+plt.ylabel("normalized total amount of new infections observed")
 plt.legend(bbox_to_anchor=(0.25, 1))
-plt.savefig("images/block3/nAmerica.png")
+plt.savefig("images/block4/nAmerica.png")
 plt.clf()
 
 sAmerica = ['AR01','AR02','AR03','AR04','AR05','BR01','BR02','BR03','BR05','BR06','BR12','BR13','CL01','CL02','CL03','CL05','CL06','CO01','CO02','CO03','CO04','PE01','PE02','PE03','PE04']
@@ -141,13 +148,14 @@ ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%y'))
 
 for ispOp in sAmerica:
     ispData = data2[data2.isp == ispOp].reset_index(drop=True)
-    if len(ispData) > 200:
-        plt.plot(ispData['Date_First_Seen'], range(0,len(ispData)), label=ispOp)
+    size = float(list(op_names[op_names.op == ispOp]['size'])[0])
+    if size > 0 and len(ispData) > 0:
+        plt.plot(ispData['Date_First_Seen'], [x/size for x in range(0,len(ispData))], label=ispOp)
 
 plt.xlabel("time (mm/yy)")
-plt.ylabel("total amount of new infections observed")
+plt.ylabel("normalized total amount of new infections observed")
 plt.legend(bbox_to_anchor=(0.25, 1))
-plt.savefig("images/block3/sAmerica.png")
+plt.savefig("images/block4/sAmerica.png")
 plt.clf()
 
 africa = ['EG01','EG02','EG03','IL01','IL02','IL03','IL04','MA01','MA02','SA02','SA03','SA04','ZA01','ZA02','ZA03','ZA04','ZA05','ZA06','ZA07']
@@ -158,13 +166,14 @@ ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%y'))
 
 for ispOp in africa:
     ispData = data2[data2.isp == ispOp].reset_index(drop=True)
-    if len(ispData) > 0:
-        plt.plot(ispData['Date_First_Seen'], range(0,len(ispData)), label=ispOp)
+    size = float(list(op_names[op_names.op == ispOp]['size'])[0])
+    if size > 0 and len(ispData) > 0:
+        plt.plot(ispData['Date_First_Seen'], [x/size for x in range(0,len(ispData))], label=ispOp)
 
 plt.xlabel("time (mm/yy)")
-plt.ylabel("total amount of new infections observed")
+plt.ylabel("normalized total amount of new infections observed")
 plt.legend(bbox_to_anchor=(0.25, 1))
-plt.savefig("images/block3/africa.png")
+plt.savefig("images/block4/africa.png")
 plt.clf()
 
 asiaOceania = ['AU02','AU05','AU06','AU07','AU08','CN02','CN03','CN04','CN05','ID01','ID02','ID03','ID04','ID05','IN01','IN02','IN03','IN04','IN06','IN07','IN08','IN09','JP02','JP03','JP04','JP05','JP06','JP07','JP09','KR02','KR06','KR07','KZ01','KZ02','MY01','MY02','MY03','MY04','NZ01','NZ03','NZ05','NZ06','PH01','PH04','PH05','PH06','PH07','PK01','PK02','PK03','PK04','PK05','PK06','RU02','RU05','RU11','RU20','RU21','RU22','RU23','TH01','TH02','TH03','TH04','TR01','TR02','TR03','TR04','TR05','TR06','TW01','TW02','TW03','TW05','VN01','VN02','VN03','VN04','VN05','VN06']
@@ -175,16 +184,33 @@ ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%y'))
 
 for ispOp in asiaOceania:
     ispData = data2[data2.isp == ispOp].reset_index(drop=True)
-    if len(ispData) > 800:
-        plt.plot(ispData['Date_First_Seen'], range(0,len(ispData)), label=ispOp)
+    size = float(list(op_names[op_names.op == ispOp]['size'])[0])
+    if size > 0 and len(ispData) > 0:
+        plt.plot(ispData['Date_First_Seen'], [x/size for x in range(0,len(ispData))], label=ispOp)
 
 plt.xlabel("time (mm/yy)")
-plt.ylabel("total amount of new infections observed")
+plt.ylabel("normalized total amount of new infections observed")
 plt.legend(bbox_to_anchor=(0.25, 1))
-plt.savefig("images/block3/asia_oceania.png")
+plt.savefig("images/block4/asia_oceania.png")
 plt.clf()
 
+fig = plt.figure()
+ax = fig.add_subplot(111)
+ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%y'))
 
+for ispOp in ispCount['isp']:
+    ispData = data2[data2.isp == ispOp].reset_index(drop=True)
+    sizeList = list(op_names[op_names.op == ispOp]['size'])
+    if len(sizeList) == 1:
+        size = float(sizeList[0])
+        if size > 0 and len(ispData) > 0:
+            plt.plot(ispData['Date_First_Seen'], [x/size for x in range(0,len(ispData))], label=ispOp)
+
+plt.xlabel("time (mm/yy)")
+plt.ylabel("normalized total amount of new infections observed")
+plt.legend(bbox_to_anchor=(0.25, 1))
+plt.savefig("images/block4/all.png")
+plt.clf()
 
 
 
