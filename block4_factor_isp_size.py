@@ -2,8 +2,12 @@ import pandas as pd
 import matplotlib as mat
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
+import numpy as np
+from scipy import stats
 from datetime import datetime
 from scipy.stats.stats import pearsonr
+from numpy.polynomial.polynomial import polyfit
+import statsmodels.api as sm
 import sys
 
 op_names = pd.read_csv('op_names_v2.csv', na_filter = False)
@@ -34,6 +38,11 @@ for i in range(len(ispCount)-1):
         sizes.append(list(size)[0])
 
 plt.scatter(sizes, infections, marker='.')
+#b, m = polyfit(sizes, infections, 1)
+#plt.plot(sizes, [b + m *float(s) for s in sizes], '-')
+slope, intercept, r_value, p_value, std_err = stats.linregress(sizes,infections)
+line = [slope*s+intercept for s in sizes]
+plt.plot(sizes,line, color='red')
 # zoom in a bit
 plt.ylim(top=9000, bottom=0)
 plt.xlim(right=120000000, left=0)
