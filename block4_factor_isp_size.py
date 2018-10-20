@@ -42,15 +42,42 @@ plt.scatter(sizes, infections, marker='.')
 #plt.plot(sizes, [b + m *float(s) for s in sizes], '-')
 slope, intercept, r_value, p_value, std_err = stats.linregress(sizes,infections)
 line = [slope*s+intercept for s in sizes]
-plt.plot(sizes,line, color='red')
+plt.plot(sizes,line, color='red', label="regression line")
 # zoom in a bit
 plt.ylim(top=9000, bottom=0)
 plt.xlim(right=120000000, left=0)
 plt.xlabel("ISP size")
 plt.ylabel("Total new infections observed")
+plt.legend(bbox_to_anchor=(1, 1))
 plt.savefig("images/block4/factor_isp_size_zoomed.png")
 plt.clf()
 
 print("Pearson's correlation coefficient: {0:.4f}".format(pearsonr(sizes,infections)[0]))
 print("P-value: {0:.4f}".format(pearsonr(sizes,infections)[1]))
 
+#indices = list()
+#for i in range(len(sizes)):
+#    if sizes[i] > 200000000 or infections[i] > 1000:
+#        indices.append(i)
+#
+#for i in range(len(indices)-1,-1,-1):
+#    del sizes[indices[i]]
+#    del infections[indices[i]]
+#
+#print("Pearson's correlation coefficient: {0:.4f}".format(pearsonr(sizes,infections)[0]))
+#print("P-value: {0:.4f}".format(pearsonr(sizes,infections)[1]))   
+#        
+#plt.scatter(sizes, infections, marker='.')
+##b, m = polyfit(sizes, infections, 1)
+##plt.plot(sizes, [b + m *float(s) for s in sizes], '-')
+#slope, intercept, r_value, p_value, std_err = stats.linregress(sizes,infections)
+#line = [slope*s+intercept for s in sizes]
+#plt.plot(sizes,line, color='red', label="regression line")
+## zoom in a bit
+#plt.ylim(top=1000, bottom=0)
+#plt.xlim(right=20000000, left=0)
+#plt.xlabel("ISP size")
+#plt.ylabel("Total new infections observed")
+#plt.legend(bbox_to_anchor=(1, 1))
+#plt.savefig("images/block4/factor_isp_size_zoomed2.png")
+#plt.clf()
